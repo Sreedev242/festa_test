@@ -20,6 +20,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
         if (response.statusCode == 200 || response.statusCode == 201) {
           final ReslutModelList = ResuultModel.fromJson(response.data);
           //  print(ReslutModelList);
+          
           emit(HomeState(
               isError: false, isLoading: false, resultList: ReslutModelList));
         } else {

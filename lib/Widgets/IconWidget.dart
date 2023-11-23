@@ -53,7 +53,7 @@ class _IconWidgetState extends State<IconWidget> {
                 onTap: () {
                   selectIcon(index);
                 },
-                child: Icon(
+                child: Icon(size:34.dm,
                   icon,
                   color: index == selectedIconIndex
                       ? Constants.appThemeColor
